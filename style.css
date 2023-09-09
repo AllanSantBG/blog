@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;
+}
+
+/*BARRA DE NAVEGAÇÃO*/
+nav {
+    padding: 1.5%;
+}
+a {
+    color: #393939;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+hr {
+    opacity: 0.3;
+}
+
+/*CONTAINER*/
+.container {
+    justify-content: center;
+    align-items: center;
+}
+/*TITULO*/
+.heading {
+    color: #333333;
+    text-align: center;
+    margin: 2.5% 30%;
+}
+.title {
+    font-size: 3rem;
+}
+#subtitle {
+    opacity: 0.6;
+    font-size: 1rem;
+}
+
+/*PRINCIPAL*/
+main {
+    color: #333333;
+    justify-content: center;
+    display: flex;
+}
+/*TEXTO LATERAL*/
+main .side-text {
+    width: 10%;
+}
+main .side-text img {
+    width: 100%;
+}
+main .side-text #author-name {
+    line-height: 2;
+    font-size: 1.3rem;
+}
+main .side-text #author-description {
+    line-height: 2;
+    opacity: 0.6;
+    font-size: 1rem;
+}
+main .side-text p {
+    padding-bottom: 7px;
+    font-size: 1rem;
+}
+
+/*TEXTO PRINCIPAL*/
+main .text {
+    margin-left: 2.5%;
+    font-size: 1.1rem;
+    width: 50%;
+}
+main .text .wrapper {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+main .text .wrapper .grid1 {
+    margin-right: 15%;
+}
+span#title {
+    line-height: 2.5;
+    opacity: 0.8;
+    font-weight: 700;
+}
+p#paragraph {
+    padding: 10px 0;
+    line-height: 1.5;
+    opacity: 0.75;
+}
+img#p-image {
+    width: 100%;
+}
+
+/*RODAPÉ*/
+footer {
+    text-align: center;
+}
+
+/*RESPONSIVIDADE*/
+@media screen and (max-width: 920px) {
+    .container {
+        margin: 0 2.5%;
+    }
+    .heading {
+        margin: 2.5% 0;
+    }
+    main {
+        display: block;
+    }
+    main .side-text {
+        text-align: center;
+        margin: 0;
+        width: 100%;
+    }
+    main .text {
+        width: 100%;
+        margin: 0;
+    }
+    main .text .wrapper {
+        display: block;
+    }
+    main .text .wrapper .grid1 {
+        margin: 0;
+    }
+}
